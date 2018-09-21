@@ -1,0 +1,53 @@
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsbsy,amsmath,amstext,amssymb,amsfonts,amsthm}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{coffee4}
+\usepackage{tikz}
+
+%You can use \cofe[ABCD]m{alpha=[0,1]}{scale=[0:...]}{algle=[1,360]}{xoff}{yofff}
+
+\newcounter{problem}
+\newcommand\Problem{
+    \stepcounter{problem}
+    \textbf{Problema \theproblem\\[2.0pt]}
+}
+
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}{Corolario}[theorem]
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{definition}[theorem]{Definición}
+
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\title{Tarea 2 \-- Compresión de Datos}
+\author{José Joaquín Zubieta Rico\\Lic. Computación \-- UGTO}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+{\Problem} Tenemos que su código de Hoffman corresponde al generado por el siguiente árbol
+\\
+\begin{center}
+    \begin{tikzpicture}
+        \node[circle,draw]{$30$}
+        	child[missing]{}
+        	child{node[circle,draw]{40} 
+        		child{node[circle,draw] {20}} 
+        		child{node{}
+        			child[missing]{}
+        			child{node[circle,draw]{30}}}};
+    \end{tikzpicture}
+\end{center}
+
+
+\end{document}

@@ -1,0 +1,5 @@
+set autoscale xfix
+set autoscale yfix
+set autoscale cbfix
+set hidden3d
+splot 'probabilities' matrix nouniform notitle with lines

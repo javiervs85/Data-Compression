@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-I$(IDIR)$/;"	m
+DEPS	Makefile	/^DEPS = $(patsubst %,$(IDIR)\/%,$(_DEPS))$/;"	m
+IDIR	Makefile	/^IDIR =..\/include$/;"	m
+LDIR	Makefile	/^LDIR =..\/lib$/;"	m
+LIBS	Makefile	/^LIBS=-lm$/;"	m
+OBJ	Makefile	/^OBJ = $(patsubst %,$(ODIR)\/%,$(_OBJ))$/;"	m
+ODIR	Makefile	/^ODIR=obj$/;"	m
+_DEPS	Makefile	/^_DEPS = $/;"	m
+_OBJ	Makefile	/^_OBJ = main.o file.o distribution.o$/;"	m
+_size_file	file.c	/^size_t _size_file (FILE * pf)$/;"	f
+file_cont	file.c	/^char * file_cont (File * pf)$/;"	f
+file_read	file.c	/^File * file_read (FILE * pf)$/;"	f
+file_size	file.c	/^size_t file_size (File * pf)$/;"	f
+file_write	file.c	/^void file_write (FILE * pf, File * cont)$/;"	f
+get_ascii2_distribution	distribution.c	/^Distribution * get_ascii2_distribution (File * cont)$/;"	f
+get_ascii_distribution	distribution.c	/^Distribution * get_ascii_distribution (File * cont)$/;"	f
+main	main.c	/^int main ( int argc , char * const argv [] )$/;"	f
+new_Distribution	distribution.c	/^Distribution * new_Distribution ()$/;"	f
+new_file	file.c	/^File * new_file ()$/;"	f
+set_dist_dist	distribution.c	/^double * set_dist_dist (double * dist, Distribution * pd)$/;"	f
+set_dist_size	distribution.c	/^long int set_dist_size (size_t size, Distribution * pd)$/;"	f
+set_dist_sum	distribution.c	/^long int set_dist_sum (long int sum, Distribution * pd)$/;"	f
+set_dist_val	distribution.c	/^char ** set_dist_val (char ** val, Distribution * pd)$/;"	f
+set_distribution	distribution.c	/^void set_distribution (long int sum, size_t size, double * dist, char ** val, Distribution * pd)$/;"	f

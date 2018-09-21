@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CPPC	Makefile	/^CPPC=g++$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS=-I$(IDIR) -std=c++17$/;"	m
+DEPS	Makefile	/^DEPS = $(patsubst %,$(IDIR)\/%,$(_DEPS))$/;"	m
+IDIR	Makefile	/^IDIR =..\/include$/;"	m
+LDIR	Makefile	/^LDIR =..\/lib$/;"	m
+LIBS	Makefile	/^LIBS=-lm$/;"	m
+OBJ	Makefile	/^OBJ = $(patsubst %,$(ODIR)\/%,$(_OBJ))$/;"	m
+ODIR	Makefile	/^ODIR=obj$/;"	m
+_DEPS	Makefile	/^_DEPS = $/;"	m
+_OBJ	Makefile	/^_OBJ = main.o verify_ud.o$/;"	m
+add_code	verify_ud.cpp	/^void Code :: add_code (std::string str)$/;"	f	class:Code
+add_code	verify_ud.cpp	/^void Code :: add_code (std::vector <std::string> str)$/;"	f	class:Code
+main	main.cpp	/^int main ( int argc , char * const argv [] )$/;"	f
+uni_decode	verify_ud.cpp	/^bool Code :: uni_decode ()$/;"	f	class:Code
+~Code	verify_ud.cpp	/^Code :: ~Code ()$/;"	f	class:Code
